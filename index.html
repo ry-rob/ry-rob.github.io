@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elliot Waves Token</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5 col-md-4" id="metamask-side">
+            <div class="blocked">
+               <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn"><img src="https://github.com/MetaMask/faq/raw/master/images/download-metamask-dark.png" alt=""></a>
+            </div>
+            <!-- <div class="alert-box">
+                <div class="alert-content">TESTEST</div>
+            </div> -->
+            <div class="aside">
+		<div class="row">
+                    <div class="col-md-12">
+			    <div class="btn-primary" onclick="myBalance()">
+				Update Balance
+			    </div>
+		    </div>
+		</div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Total</h3>
+                        <label class="double">
+                            <i>EWT</i>
+                            <input value="0" disabled id="total-ewt">
+                        </label>
+                        <label class="double">
+                            <i>ETH</i>
+                            <input value="0" disabled id="total-eth">
+                        </label>
+                        <hr class="hr-total">
+                    </div>
+                    <div class="col-md-12">
+                        <h3>My Tokens</h3>
+                        <label class="single">
+                            <i>EWT</i>
+                            <input value="0" disabled id="mybalance">
+                        </label>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Buy</h3>
+                        <label class="double">
+                            <i>EWT</i>
+                            <input placeholder="Amount" disabled id="buy-amount">
+                        </label>
+                        <label class="double">
+                            <i>ETH</i>
+                            <input type="number" placeholder="Amount" id="eth-value" onkeyup="changeAmount(event, 'buy')">
+                        </label>
+                        <p>Price: <label id="buyPrice">0 ETH</label></p>
+                        <div class="btn-primary right disabled" onclick="buy()" id="buy-btn">
+                            Buy
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Sell</h3>
+                        <label class="double">
+                            <i>ETH</i>
+                            <input placeholder="Amount" disabled id="sell-amount">
+                        </label>
+                        <label class="double">
+                            <i>EWT</i>
+                            <input type="number" placeholder="Amount" id="eth-value-sell" onkeyup="changeAmount(event, 'sell')">
+                        </label>
+                        <p>Price: <label id="sellPrice">0 ETH</label></p>
+                        <div class="btn-primary right disabled" onclick="sell()" id="sell-btn">
+                            Sell
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>My Devidends</h3>
+                        <label class="single">
+                            <i>ETH</i>
+                            <input placeholder="Click update" value="0" id="mydividends">
+                        </label>
+                        <div class="col-md-12">
+                            <div class="btn-primary" onclick="reinvest()">
+                                Reinvest
+                            </div>
+                            <div class="btn-primary withdraw" onclick="withdraw()">
+                                Withdraw
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div id="withdraw"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                    <div class="col-md-12">
+                        <ul class="txt">
+                            <li>1. You buy into the contract by purchasing EWT, every token purchased increases
+                                the EWT price by +0.00000001 ETH.
+                            </li>
+                            <li>2. 10% of what you spend to buy the EWT gets distributed proportionally to all
+                                other EWT holders.
+                            </li>
+                            <li>3. When you sell your EWT, you get back ETH at the specified price, and the
+                                global price per EWT goes down by -0.00000001 ETH.
+                            </li>
+                            <li>4. 10% of what you would get back for the sale is distributed to all other
+                                EWT holders proportionally.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-8">
+            <div class="content">
+                <h2>
+                    Elliott Waves Token (EWT)
+                </h2>
+                <h5>
+                    Ryan Robinson // Massachusetts Institute of Technology
+                </h5>
+                <p class="first-txt">
+                    This work is dedicated to the investigations related to the applied cryptography and aims to analyze the development process and changes in the behaviour of the cryptocurrencies markets users in form of recognizable models. The relevance of this topic is that in the recent years the cryptocurrency assets have become an inalienable part of the modern society activities. Therefore, the community reacts on the generated market of cryptocurrencies assets creating different trading and exchange platforms. The basic task of cryptography is to assure the transparent and enabling environment for the development of the commodity-money relations in the modern society.
+<br/><br/>
+The goal of this work is to carry out a deep analysis of the financial relations between the people according to the Elliott Waves Theory.
+In order to reach the above mentioned goal, the following tasks have been determined:
+</p>
+                <ol>
+                    <li>Analyze the psychological behaviour of the test participants</li>
+                    <li>Formulate the key behaviour stages</li>
+                    <li>Analysis of the movement and wave activity changes</li>
+                </ol>
+<br/>
+                <p>
+The object of the study is the author’s cryptography development based on the empirical rule Pareto and Elliott wave theory.
+Based on the wave theory we come to the conclusion that within the development of any cryptographic asset we can define the cycle consisting of 8 waves. Five of them have a growing trend and three of them have a decreasing trend. Besides, each 8-waves cycle repeats. However, the number of repetitions of each cycle increases over the time. According to the preliminary calculations, we can make an analytical forecast of the behaviour of the test participants.
+The first cycle will be short. In a relatively short period of time, we can observe five growth waves. The first three waves will be created by the crypto-enthusiasts who will decide to check the Elliott theory on practice. However, this activity will cause to the certain sales volume that can lead the smart contract to the highest positions and attract speculators’ attention. Next two waves will be supported by such speculators, they will decide to fix their profits that will cause three decreasing waves.<br/><br/>
+The second cycle can be defined as a medium-term. At a certain stage, the token rate will be fixed at the minimal psychological stamp, after that another 5 growth wave will occur. These waves particularity is that other developers and cryptography experts will pay attention to this issue, will create specialized resources and websites in order to make this usage of this smart-contract easier. The appearance of new developments will have the direct influence on each of the 5 growth waves, nevertheless they will be followed by the 3 decreasing waves. <br/><br/>
+Finally, the third cycle is the long-term one. During the work with the smart-contract, a critical number of users will be united, and it will enable the Pareto principle, where 20% of efforts will give 80% of the results. Applying that to my development, we can say that 80% of the tokens volume will belong to 20% of users. Therefore, the token rate will become stable and new growth waves will occur too slowly because only 20% of tokens will be used for sales/purchase while other 80% will be used for storing the capital or as a calculating money unit. The number of users will exceed the determined quantity number, there will be no reason to buy or sell token directly via the smart contract, token generation and burning. The turnover will transfer to the exchange platforms or cryptocurrencies assets stocks. Many cryptocurrencies have passed through these stages, however the only difference is that each cryptocurrency had a different system for generating new coins. The generation of coins within the smart-contract directly depends on users. This work will help to set up and monitor the temporary frameworks necessary for the token in order to pass through this way, starting from the speculation object stage up to the digital asset stage that would determine the final price.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/bignumber.min.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="./js/abi.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

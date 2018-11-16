@@ -1,0 +1,20 @@
+# ElliottWavesWeb
+
+Elliott Waves Token (EWT) 
+Ryan Robinson // Massachusetts Institute of Technology
+
+This work is dedicated to the investigations related to the applied cryptography and aims to analyze the development process and changes in the behaviour of the cryptocurrencies markets users in form of recognizable models. The relevance of this topic is that in the recent years the cryptocurrency assets have become an inalienable part of the modern society activities. Therefore, the community reacts on the generated market of cryptocurrencies assets creating different trading and exchange platforms. The basic task of cryptography is to assure the transparent and enabling environment for the development of the commodity-money relations in the modern society.
+
+
+The goal of this work is to carry out a deep analysis of the financial relations between the people according to the Elliott Waves Theory.
+In order to reach the above mentioned goal, the following tasks have been determined:
+1. Analyze the psychological behaviour of the test participants
+2. Formulate the key behaviour stages
+3. Analysis of the movement and wave activity changes
+
+The object of the study is the author’s cryptography development based on the empirical rule Pareto and Elliott wave theory .
+Based on the wave theory we come to the conclusion that within the development of any cryptographic asset we can define the cycle consisting of 8 waves. Five of them have a growing trend and three of them have a decreasing trend. Besides, each 8-waves cycle repeats. However, the number of repetitions of each cycle increases over the time. According to the preliminary calculations, we can make an analytical forecast of the behaviour of the test participants:
+The first cycle will be short. In a relatively short period of time, we can observe five growth waves. The first three waves will be created by the crypto-enthusiasts who will decide to check the Elliott theory on practice. However, this activity will cause to the certain sales volume that can lead the smart contract to the highest positions and attract speculators’ attention. Next two waves will be supported by such speculators, they will decide to fix their profits that will cause three decreasing waves.
+The second cycle can be defined as a medium-term. At a certain stage, the token rate will be fixed at the minimal psychological stamp, after that another 5 growth wave will occur. These waves particularity is that other developers and cryptography experts will pay attention to this issue, will create specialized resources and websites in order to make this usage of this smart-contract easier. The appearance of new developments will have the direct influence on each of the 5 growth waves, nevertheless they will be followed by the 3 decreasing waves.
+Finally, the third cycle is the long-term one. During the work with the smart-contract, a critical number of users will be united, and it will enable the Pareto principle, where 20% of efforts will give 80% of the results. Applying that to my development, we can say that 80% of the tokens volume will belong to 20% of users. Therefore, the token rate will become stable and new growth waves will occur too slowly because only 20% of tokens will be used for sales/purchase while other 80% will be used for storing the capital or as a calculating money unit. The number of users will exceed the determined quantity number, there will be no reason to buy or sell token directly via the smart contract, token generation and burning. The turnover will transfer to the exchange platforms or cryptocurrencies assets stocks. Many cryptocurrencies have passed through these stages, however the only difference is that each cryptocurrency had a different system for generating new coins. The generation of coins within the smart-contract directly depends on users. This work will help to set up and monitor the temporary frameworks necessary for the token in order to pass through this way, starting from the speculation object stage up to the digital asset stage that would determine the final price.
+

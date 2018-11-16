@@ -1,0 +1,332 @@
+/*Styles for EWT project*/
+
+/* include font*/
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../css/font/HelveticaNeueCyr-Bold.ttf),
+    url(../css/font/HelveticaNeueCyr-Bold.eot),
+    url(../css/font/HelveticaNeueCyr-Bold.woff);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../css/font/HelveticaNeueCyr-Light.eot),
+    url(../css/font/HelveticaNeueCyr-Light.ttf),
+    url(../css/font/HelveticaNeueCyr-Light.woff);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../css/font/HelveticaNeueCyr-Medium.eot),
+    url(../css/font/HelveticaNeueCyr-Medium.ttf),
+    url(../css/font/HelveticaNeueCyr-Medium.woff);
+    font-style: normal;
+    font-weight: 500;
+}
+
+/**/
+
+/* global */
+
+body {
+    font-family: "Helvetica Neue";
+}
+
+label {
+    margin-bottom: 0;
+    position: relative;
+}
+
+hr {
+    border-top: 1px solid #979797;
+    clear: right;
+}
+
+input {
+    height: 38px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding: 9px 16px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input::placeholder{
+    color: #999999
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 1280px;
+    }
+}
+/**/
+
+
+
+/*Style for aside block */
+
+.aside {
+    background-color: #D8D8D8;
+    padding: 20px 20px 30px;
+}
+
+
+.aside h3 {
+    font-size: 16px;
+}
+
+.aside i {
+    position: absolute;
+    height: 38px;
+    width: 61px;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 4px 4px 0;
+    background-color: #ECEEEF;
+    color: #55595C;
+    font-family: "Helvetica Neue";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    font-style: normal;
+    padding: 8px 15px 0;
+    right:0;
+}
+
+.aside .double input {
+    display: inline-block;
+    width: 100%;
+    max-width: 160px;
+    padding-right: 62px;
+}
+
+.aside .double:nth-child(2) {
+    float: right;
+}
+
+.aside .single {
+    width: 100%;
+}
+
+.aside .single input{
+    width: 100%;
+}
+
+.aside .hr-total {
+    margin-bottom: 0;
+}
+
+.aside .right {
+    float: right;
+}
+
+.aside p {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #373A3C;
+}
+
+.aside p label{
+    font-weight: 500;
+}
+
+.aside .btn-primary {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 8px 0;
+    width: 100%;
+    max-width: 160px;
+    border-radius: 4px;
+    background-image: none;
+    background-color: #0275D8;
+    border: 1px solid #0275D8;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.aside .withdraw {
+    float: right;
+}
+
+.aside .txt {
+    list-style-type:none;
+    padding: 0;
+    margin-left: 20px;
+    width: 100%;
+    max-width: 280px;
+    color: #818A91;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+/*Styles for content block*/
+
+.content {
+    cursor: default;
+}
+
+.content h5 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #373A3C;
+}
+
+.content p , .content ol li {
+    color: #373A3C;
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.content p.first-txt {
+    margin-bottom: 0;
+}
+
+.content ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+
+/* Media */
+
+@media (max-width: 1199px) {
+    input {
+        padding-left: 10px;
+    }
+    .aside .double input {
+        max-width: 125px;
+        padding-right: 50px;
+    }
+    .aside i {
+        width: 50px;
+        padding: 8px 6px 0;
+        text-align: center;
+    }
+    .aside .btn-primary {
+        max-width: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 990px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .aside .btn-primary {
+        max-width: 160px;
+        display: block;
+        float: none;
+        clear: both;
+    }
+    .aside .right {
+        float: none;
+    }
+    .aside .double:nth-of-type(1) {
+        float: right;
+    }
+    .aside .double:nth-of-type(2) {
+        float: none;
+    }
+    .aside .withdraw {
+        float: none;
+        display: inline-block;
+    }
+    .aside p {
+        display: block;
+    }
+}
+@media (max-width: 394px) {
+    .aside .btn-primary {
+    margin-left: 0;
+    }
+}
+@media (max-width: 370px) {
+    .container {
+        /*padding: 0;*/
+    }
+    .aside .right {
+        float:none;
+    }
+    .aside .double:nth-child(2) {
+        float: right;
+    }
+    .aside .txt {
+        margin-left: 0;
+    }
+}
+
+#withdraw {
+    display: inline-block;
+    padding: 20px 0 0 20px;
+    font-size: 16px;
+}
+
+#metamask-side {
+    position: relative;
+}
+.blocked {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 30px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+.blocked a, .blocked img {
+    width: 90%;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn-primary.disabled, .btn-primary.disabled:hover {
+    background-color: darkgrey;
+    border: 1px solid darkgrey;
+    cursor: not-allowed;
+}
+
+.alert-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 30px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+.alert-content {
+    width: 90%;
+    height: 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
