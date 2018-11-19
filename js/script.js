@@ -70,8 +70,8 @@ var buy = function () {
   }
 }
 var sell = function () {
-  if ($("#eth-value-sell").val() === "") return;
-  ethAmount = document.getElementById("eth-value-sell").value
+  if ($("#ewt-value").val() === "") return;
+  ethAmount = document.getElementById("ewt-value").value
   if (ethAmount < 0) {
     ethAmount = 0;
     document.getElementById("eth-value").value = 0
@@ -96,7 +96,7 @@ var buyByContract = function () {
 }
 
 var sellByContract = function () {
-  contractInstance.sell(ethAmount, function (err, res) {
+  contractInstance.sell(web3.toWei(ethAmount, 'ether'), function (err, res) {
     console.log(res)
   })
 }
