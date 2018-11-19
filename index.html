@@ -21,14 +21,18 @@
                 <div class="alert-content">TESTEST</div>
             </div> -->
             <div class="aside">
-		<div class="row">
-                    <div class="col-md-12">
-			    <div class="btn-primary" onclick="myBalance()">
-				Update Balance
-			    </div>
-		    </div>
-		</div>
                 <div class="row">
+                    <div class="col-md-12">
+                        <span class="c-title">Contact Address</span>
+                        <b id="toAddress"></b>
+                        <br>
+                        <br>
+                        <div class="flex-between-box">
+                            <span class="c-title">Balance Updated</span>
+                            <span id="b-updated"></span>
+                        </div>
+                        <hr class="hr-total">
+                    </div>
                     <div class="col-md-12">
                         <h3>Total</h3>
                         <label class="double">
@@ -48,6 +52,7 @@
                             <input value="0" disabled id="mybalance">
                         </label>
                     </div>
+
                     <div class="col-md-12">
                         <h3>Buy</h3>
                         <label class="double">
@@ -83,33 +88,30 @@
                         <h3>My Devidends</h3>
                         <label class="single">
                             <i>ETH</i>
-                            <input placeholder="Click update" value="0" id="mydividends">
+                            <input disabled placeholder="Click update" value="0" id="mydividends">
                         </label>
-                        <div class="col-md-12">
-                            <div class="btn-primary" onclick="reinvest()">
-                                Reinvest
-                            </div>
-                            <div class="btn-primary withdraw" onclick="withdraw()">
-                                Withdraw
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div id="withdraw"></div>
-                        </div>
                     </div>
+                    <div class="col-md-12">
+                        <div class="btn-primary" onclick="reinvest()">
+                            Reinvest
+                        </div>
+                        <div class="btn-primary withdraw" onclick="withdraw()">
+                            Withdraw
+                        </div>
+                        </div>
                     <div class="col-md-12">
                         <hr>
                     </div>
                     <div class="col-md-12">
                         <ul class="txt">
                             <li>1. You buy into the contract by purchasing EWT, every token purchased increases
-                                the EWT price by +0.00000001 ETH.
+                                the EWT price by +<span id="token-price-incremental">0.00000001</span> ETH.
                             </li>
                             <li>2. 10% of what you spend to buy the EWT gets distributed proportionally to all
                                 other EWT holders.
                             </li>
                             <li>3. When you sell your EWT, you get back ETH at the specified price, and the
-                                global price per EWT goes down by -0.00000001 ETH.
+                                global price per EWT goes down by -<span id="token-price-initial">0.00000001</span> ETH.
                             </li>
                             <li>4. 10% of what you would get back for the sale is distributed to all other
                                 EWT holders proportionally.
@@ -129,24 +131,45 @@
                     Ryan Robinson // Massachusetts Institute of Technology
                 </h5>
                 <p class="first-txt">
-                    This work is dedicated to the investigations related to the applied cryptography and aims to analyze the development process and changes in the behaviour of the cryptocurrencies markets users in form of recognizable models. The relevance of this topic is that in the recent years the cryptocurrency assets have become an inalienable part of the modern society activities. Therefore, the community reacts on the generated market of cryptocurrencies assets creating different trading and exchange platforms. The basic task of cryptography is to assure the transparent and enabling environment for the development of the commodity-money relations in the modern society.
-<br/><br/>
-The goal of this work is to carry out a deep analysis of the financial relations between the people according to the Elliott Waves Theory.
-In order to reach the above mentioned goal, the following tasks have been determined:
-</p>
+                    Данная работа посвящена исследованиям, лежащим в области прикладной криптографии и касается изучения
+                    процесса развития и изменения поведения участников криптовалютных рынков в виде распознаваемых
+                    моделей.
+                    Актуальность данной темы заключается в том, что за последние годы криптовалютные активы стали
+                    неотъемлемой частью жизнедеятельности современного общества.  Таким образом общество уже сейчас
+                    реагирует на сформировавшийся рынок криптовалютных активов создавая различные площадки по обмену
+                    и торговле. Основной задачей криптографии является создание прозрачной и благоприятной среды для
+                    развития товарно денежных отношений в современном обществе.
+                    Цель данной работы заключается в глубоком изучении материальных взаимоотношений между людьми по
+                    методике Волновой теории Эллиота.
+                    Для осуществления обозначенной цели служат следующие задачи</p>
                 <ol>
-                    <li>Analyze the psychological behaviour of the test participants</li>
-                    <li>Formulate the key behaviour stages</li>
-                    <li>Analysis of the movement and wave activity changes</li>
+                    <li>Изучение психологического поведения участников эксперимента</li>
+                    <li>Формулировка основных этапов поведения</li>
+                    <li>Анализ изменения движения и волновой активности</li>
                 </ol>
-<br/>
                 <p>
-The object of the study is the author’s cryptography development based on the empirical rule Pareto and Elliott wave theory.
-Based on the wave theory we come to the conclusion that within the development of any cryptographic asset we can define the cycle consisting of 8 waves. Five of them have a growing trend and three of them have a decreasing trend. Besides, each 8-waves cycle repeats. However, the number of repetitions of each cycle increases over the time. According to the preliminary calculations, we can make an analytical forecast of the behaviour of the test participants.
-The first cycle will be short. In a relatively short period of time, we can observe five growth waves. The first three waves will be created by the crypto-enthusiasts who will decide to check the Elliott theory on practice. However, this activity will cause to the certain sales volume that can lead the smart contract to the highest positions and attract speculators’ attention. Next two waves will be supported by such speculators, they will decide to fix their profits that will cause three decreasing waves.<br/><br/>
-The second cycle can be defined as a medium-term. At a certain stage, the token rate will be fixed at the minimal psychological stamp, after that another 5 growth wave will occur. These waves particularity is that other developers and cryptography experts will pay attention to this issue, will create specialized resources and websites in order to make this usage of this smart-contract easier. The appearance of new developments will have the direct influence on each of the 5 growth waves, nevertheless they will be followed by the 3 decreasing waves. <br/><br/>
-Finally, the third cycle is the long-term one. During the work with the smart-contract, a critical number of users will be united, and it will enable the Pareto principle, where 20% of efforts will give 80% of the results. Applying that to my development, we can say that 80% of the tokens volume will belong to 20% of users. Therefore, the token rate will become stable and new growth waves will occur too slowly because only 20% of tokens will be used for sales/purchase while other 80% will be used for storing the capital or as a calculating money unit. The number of users will exceed the determined quantity number, there will be no reason to buy or sell token directly via the smart contract, token generation and burning. The turnover will transfer to the exchange platforms or cryptocurrencies assets stocks. Many cryptocurrencies have passed through these stages, however the only difference is that each cryptocurrency had a different system for generating new coins. The generation of coins within the smart-contract directly depends on users. This work will help to set up and monitor the temporary frameworks necessary for the token in order to pass through this way, starting from the speculation object stage up to the digital asset stage that would determine the final price.
-
+                    Объект исследования – авторская криптогорафическая разработка, основанная на эмпирическом правиле
+                    Парето и волновой теории Эллиота.
+                    На основании волновой теории мы можем сделать заключение, что в процессе развития абсолютно любого
+                    криптографического актива можно выделить цикл из восьми волн, где пять волн имеет тренд к росту и
+                    три волны имеют тренд к падению. При том, каждый восьмиволновый цикл постоянно повторяется. Однако,
+                    повторения каждого цикла постоянно увеличивается во времени.
+                </p>
+                <p>
+                    По предварительным подсчетам, можно сделать аналитический прогноз поведения участников эксперимента:
+                    Первый цикл будет кратковременным. За относительно непродолжительный промежуток времени мы сможем
+                    наблюдать пять волн роста. Первые три волны роста будут созданы криптоэнтузиастами, которые решат
+                    проверить на практике теорию Эллиота. Однако, своей активностью они создадут определенный объем
+                    продаж, который выведет смарт-контракт в число первых, что в свою очередь привлечет внимание
+                    спекулянтов. Следующие две волны подхватят спекулянты, жажда наживы победит здравый смысл и они
+                    решат зафиксировать прибыль, после чего произойдут три волны падения.
+                    Второй цикл можно охарактеризовать как среднесрочный. На определенном этапе курс токена будет
+                    зафиксирован на минимальной психологической отметке, после чего произойдет разворот и мы будем
+                    наблюдать новые пять волн роста. Эти волны будут охарактеризованы тем, что внимание на разработку
+                    обратят другие специалисты и разработчики в области криптографии, создав специализированные ресурсы
+                    и веб-сайты, упрощающие возможность пользования данным смарт-контрактом. Появление новых разработок
+                    будут оказывать непосредственное влияние на каждую из пяти волн роста, однако после этого мы будем
+                    снова наблюдать три волны падения.
                 </p>
             </div>
         </div>
