@@ -3,7 +3,7 @@
 //   "second": "0x53691a8806b3fae59b72f168eed2753c0fa39a65",
 //   "third": "0x13963620a19661cea40d37f69519a259586d067f",
 // }
-var toAddress = "0x7a1bb58f24bcdeb5ccd65a4026e0e0b1ac822a85";
+var toAddress = "0xc773dc9478510862f154d9e281fb62a4824c19b0";
 var ethAmount = .000001
 var contract;
 var contractInstance;
